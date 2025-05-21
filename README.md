@@ -8,8 +8,11 @@
 
 # 🔗 IMPORTANT LINKS
 
-### 🚀 [LIVE DEMO](https://layout-detection-aic-hcmus.vercel.app/) 🚀
-### 🛠️ [BACKEND REPOSITORY](https://github.com/trungkiet2005/Document-Translatation-API) 🛠️
+## 🚀 LIVE DEMO:
+### https://layout-detection-aic-hcmus.vercel.app/
+
+## 🛠️ BACKEND REPOSITORY:
+### https://github.com/trungkiet2005/Document-Translatation-API
 
 </div>
 
