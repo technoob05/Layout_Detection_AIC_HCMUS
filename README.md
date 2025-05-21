@@ -9,6 +9,13 @@
   <i>A research project by Applied Informatics Center - HCMUS</i>
 </p>
 
+<div align="center">
+  <h2>
+    🚀 <a href="https://layout-detection-aic-hcmus.vercel.app/">Live Demo</a> | 
+    🛠️ <a href="https://github.com/trungkiet2005/Document-Translatation-API">Backend API</a>
+  </h2>
+</div>
+
 <p align="center">
   <a href="#overview">Overview</a> •
   <a href="#features">Features</a> •
@@ -36,6 +43,12 @@
 Layout Detection AI is an advanced document analysis system developed at the Applied Informatics Center at Ho Chi Minh University of Science (HCMUS). The system utilizes state-of-the-art machine learning algorithms and computer vision techniques to accurately detect and classify different layout elements in documents, including text blocks, tables, figures, and charts.
 
 This project combines deep learning models with a modern React frontend to provide an intuitive interface for document layout analysis, enabling users to process complex documents and extract structured information with high accuracy.
+
+<p align="center">
+  <a href="https://layout-detection-aic-hcmus.vercel.app/">
+    <img src="https://via.placeholder.com/800x400?text=Try+Our+Live+Demo" alt="Demo Banner" width="800" style="border: 2px solid #4CAF50; border-radius: 10px;"/>
+  </a>
+</p>
 
 ## Features
 
@@ -77,8 +90,10 @@ This project combines deep learning models with a modern React frontend to provi
 - **ML Frameworks**: PyTorch, TensorFlow
 - **API**: FastAPI or Flask for model serving
 - **Data Processing**: OpenCV, NumPy, Pandas
+- **Repository**: [Document-Translation-API](https://github.com/trungkiet2005/Document-Translatation-API)
 
 ### DevOps
+- **Deployment**: [Vercel](https://layout-detection-aic-hcmus.vercel.app/)
 - **Containerization**: Docker
 - **CI/CD**: GitHub Actions
 - **Monitoring**: Prometheus and Grafana (optional)
@@ -107,10 +122,16 @@ The system follows a modular architecture with three main components:
 Experience our layout detection system in action:
 
 <p align="center">
-  <img src="https://via.placeholder.com/800x400?text=Layout+Detection+Demo" alt="Demo Screenshot" width="800" />
+  <a href="https://layout-detection-aic-hcmus.vercel.app/">
+    <img src="https://via.placeholder.com/800x400?text=Layout+Detection+Demo" alt="Demo Screenshot" width="800" />
+  </a>
 </p>
 
-Try the live demo at [layout-detection.aic.hcmus.edu.vn](https://github.com/technoob05/Layout_Detection_AIC_HCMUS) (coming soon)
+<div align="center">
+  <h3>
+    ✨ <a href="https://layout-detection-aic-hcmus.vercel.app/">Try our live demo now!</a> ✨
+  </h3>
+</div>
 
 ## Installation
 
@@ -133,6 +154,17 @@ npm install
 
 # Start development server
 npm run dev
+```
+
+### Backend Setup
+
+For the backend components, please refer to our [Document Translation API repository](https://github.com/trungkiet2005/Document-Translatation-API).
+
+```bash
+# Clone the backend repository
+git clone https://github.com/trungkiet2005/Document-Translatation-API.git
+
+# Follow the installation instructions in the backend repository
 ```
 
 ### Environment Configuration
