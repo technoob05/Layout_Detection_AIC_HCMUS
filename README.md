@@ -1,11 +1,11 @@
-# React AI Template
+# AI-Powered Translation Platform
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" alt="React AI Template" width="100" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" alt="Translation Platform" width="100" />
 </p>
 
 <p align="center">
-  A modern, feature-based React 19 template with AI integration capabilities
+  A modern, feature-rich translation platform built with React 19 and AI integration
 </p>
 
 <p align="center">
@@ -13,8 +13,7 @@
   <a href="#tech-stack">Tech Stack</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#project-structure">Project Structure</a> •
-  <a href="#development-workflow">Development Workflow</a> •
-  <a href="#ai-capabilities">AI Capabilities</a> •
+  <a href="#translation-capabilities">Translation Capabilities</a> •
   <a href="#available-scripts">Available Scripts</a> •
   <a href="#deployment">Deployment</a> •
   <a href="#contributing">Contributing</a> •
@@ -23,13 +22,14 @@
 
 ## Key Features
 
-- **React 19 with Latest Features**: Utilizes the new `use` hook and other React 19 features
-- **AI Integration**: Built-in support for multiple AI services including Google Gemini and LangChain
-- **PDF OCR & Processing**: Advanced PDF handling with text extraction and OCR capabilities
-- **Feature-Based Architecture**: Clean, maintainable code organization by feature modules
-- **Modern UI Components**: Integrated with Shadcn UI and styled with Tailwind CSS v4
-- **Type Safety**: Full TypeScript support throughout the codebase
-- **Enhanced Developer Experience**: ESLint 9 with flat config and Vite for fast development
+- **Multi-Source Translation**: Translate text, PDFs, websites, voice, and AR content
+- **AI-Powered Translation**: Integration with Google Gemini AI and LangChain for high-quality translations
+- **PDF Translation & OCR**: Advanced PDF handling with text extraction and OCR capabilities
+- **AR Translation**: Real-time translation in augmented reality environments
+- **Web Content Translation**: Direct URL input for translating web content
+- **Voice Translation**: Real-time voice-to-text translation support
+- **Translation Analytics**: Track and analyze translation metrics and usage patterns
+- **Modern Interface**: Built with React 19, Tailwind CSS v4, and Shadcn UI
 
 ## Tech Stack
 
@@ -40,17 +40,19 @@
 - **Styling**: Tailwind CSS v4
 - **UI Components**: Shadcn UI (Radix UI)
 
-### AI & Data Processing
-- **AI Integration**: LangChain, Google Generative AI
+### Translation & AI
+- **AI Integration**: Google Gemini AI, LangChain
 - **PDF Processing**: PDF.js, Tesseract.js, PDF-lib
-- **Data Visualization**: Fabric.js, Konva/React-Konva
+- **OCR Capabilities**: Tesseract.js
+- **Speech Recognition**: Web Speech API
+- **AR Integration**: Custom camera APIs and overlay systems
 
-### State Management & Data Fetching
+### State Management & Data
 - **State Management**: React Context API
 - **Data Fetching**: TanStack Query (React Query)
-- **Form Management**: (Add your form management library if used)
+- **Analytics**: Custom analytics integration
 
-### Routing & UI Enhancement
+### Enhancement
 - **Routing**: React Router v7
 - **Animation**: Framer Motion, Auto-Animate
 
@@ -64,10 +66,10 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/react-ai-template.git
+git clone https://github.com/your-username/translation-platform.git
 
 # Navigate to project directory
-cd react-ai-template
+cd translation-platform
 
 # Install dependencies
 npm install
@@ -76,7 +78,7 @@ npm install
 npm run dev
 ```
 
-Visit http://localhost:5173 to see your application in action.
+Visit http://localhost:5173 to see the translation platform in action.
 
 ### Environment Configuration
 
@@ -84,11 +86,11 @@ Create a `.env` file in the root directory with the following variables:
 
 ```
 # API Keys
-VITE_OPENAI_API_KEY=your_openai_api_key
-VITE_GOOGLE_API_KEY=your_google_api_key
+VITE_GOOGLE_API_KEY=your_google_gemini_api_key
+VITE_OPENAI_API_KEY=your_openai_api_key (optional)
 
 # Other configuration
-VITE_API_BASE_URL=your_base_api_url
+VITE_API_BASE_URL=your_base_api_url (if using a custom backend)
 ```
 
 ## Project Structure
@@ -100,11 +102,11 @@ src/
 │   └── ui/           # Shadcn UI components
 ├── context/          # React context providers
 ├── features/         # Feature modules
-│   └── [feature]/    # Individual feature
-│       ├── components/
-│       ├── hooks/
-│       ├── utils/
-│       └── types.ts
+│   ├── ar-translation/        # AR translation feature
+│   ├── pdf-translator/        # PDF translation feature
+│   ├── web-translation/       # Web content translation
+│   ├── voice-translation/     # Voice translation
+│   └── translation-analytics/ # Translation metrics and analysis
 ├── hooks/            # Shared custom hooks
 ├── lib/              # Core utilities
 ├── services/         # API and service integrations
@@ -114,48 +116,34 @@ src/
 └── index.css         # Global styles
 ```
 
-## Development Workflow
+## Translation Capabilities
 
-### Feature Development
+This platform includes multiple translation features:
 
-1. **Create Feature Module**: Add a new directory under `src/features/` with the structure:
-   ```
-   src/features/your-feature/
-   ├── components/       # Feature-specific components
-   ├── hooks/            # Feature-specific hooks
-   ├── utils/            # Feature-specific utilities
-   └── types.ts          # Feature-specific types
-   ```
+### PDF Translation
+- Upload and translate PDF documents
+- Extract text from PDFs using OCR for image-based PDFs
+- Interactive PDF viewer with translation overlay
+- Support for multiple language pairs
+- Smart handling of document structure
 
-2. **Export Feature Components**: Export components from your feature for use in the main application
+### AR Translation
+- Real-time camera feed translation
+- Overlay translated text in the correct position
+- Support for sign translation
+- Adjustable translation settings
 
-3. **Document Your Feature**: Add documentation in `ai/docs/your-feature.md`
+### Web Content Translation
+- Translate web pages via URL input
+- Preserve layout and formatting
+- Translation memory for frequently visited sites
+- Batch translation options
 
-### Component Development
-
-- Use Shadcn UI components when possible
-- Follow the styling patterns with Tailwind CSS v4
-- Use the `cn()` utility for merging class names
-
-## AI Capabilities
-
-This template includes several AI-related features:
-
-### PDF OCR and Processing
-- Extract text from PDFs
-- Perform OCR on image-based PDFs
-- Interact with PDF content through AI
-
-### Chat Interfaces
-- Connect to different LLM providers
-- Build conversational UI experiences
-- Process and display markdown responses
-
-### Integration Examples
-See the documentation in `ai/docs/` for detailed integration examples with:
-- Google Generative AI
-- LangChain
-- Custom AI workflows
+### Voice Translation
+- Real-time voice input translation
+- Support for multiple language pairs
+- Conversation mode for two-way translation
+- Voice output for translated content
 
 ## Available Scripts
 
@@ -188,7 +176,7 @@ The build artifacts will be stored in the `dist/` directory, ready to be deploye
 ### Recommended Hosting Solutions
 - Vercel
 - Netlify
-- GitHub Pages
+- Firebase Hosting
 - AWS Amplify
 
 ## Contributing
@@ -199,7 +187,8 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 - Write clean, readable, and well-documented code
 - Follow the feature-based architecture
 - Add appropriate TypeScript types
-- Test your changes thoroughly before submitting PRs
+- Test translations in multiple languages
+- Consider accessibility in translation UI
 
 ## License
 
@@ -208,7 +197,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - React team for React 19
+- Google for Gemini AI
 - Shadcn for the excellent component library
 - Tailwind Labs for Tailwind CSS v4
-- The LangChain team
-- All open-source contributors whose libraries make this template possible
+- The open-source community for translation and OCR libraries

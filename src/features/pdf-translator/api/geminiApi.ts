@@ -232,5 +232,18 @@ export class GeminiApiClient {
   }
 }
 
-// Export a singleton instance with the API key
-export const geminiApi = new GeminiApiClient('AIzaSyCwg1omBoK9kSWwmjJ3BWFb0CO7oEAAJVU'); 
+// Get API key from environment variables
+const getApiKey = () => {
+  const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
+  
+  // if (!apiKey) {
+  //   console.warn('VITE_GOOGLE_API_KEY not found in environment variables. Using fallback method for development only.');
+  //   // Fallback for development - NOT recommended for production
+  //  
+  // }
+  
+  return apiKey;
+};
+
+// Export a singleton instance with the API key from environment variables
+export const geminiApi = new GeminiApiClient(getApiKey()); 
