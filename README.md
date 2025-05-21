@@ -4,6 +4,15 @@
   <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/HCMUS_logo.png" alt="Layout Detection AI" width="150"/>
 </p>
 
+<div align="center">
+
+# 🔗 IMPORTANT LINKS
+
+### 🚀 [LIVE DEMO](https://layout-detection-aic-hcmus.vercel.app/) 🚀
+### 🛠️ [BACKEND REPOSITORY](https://github.com/trungkiet2005/Document-Translatation-API) 🛠️
+
+</div>
+
 <p align="center">
   <b>Advanced Document Layout Analysis and Detection System</b><br>
   <i>A research project by Applied Informatics Center - HCMUS</i>
